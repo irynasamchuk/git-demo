@@ -8,4 +8,6 @@ public class Tests extends DriverManager {
     public void openGooglePage(){
         googlePage.openGooglePage();
     }
+
+
 }
