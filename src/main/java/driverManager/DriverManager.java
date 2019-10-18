@@ -12,19 +12,19 @@ public class DriverManager {
     protected static WebDriverWait driverWait;
 
     @BeforeClass
-    public static void openDriver(){
-        if (driver == null){
-//            ChromeOptions chromeOptions = new ChromeOptions();
-//            chromeOptions.setBinary("C:\\Users\\Iryna_Samchuk\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
+    public static void openDriver() {
+        if (driver == null) {
+//          ChromeOptions chromeOptions = new ChromeOptions();
+//          chromeOptions.setBinary("C:\\Users\\Iryna_Samchuk\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
             System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
-            driver = new ChromeDriver(chromeOptions);
+//          driver = new ChromeDriver(chromeOptions);
             driverWait = new WebDriverWait(driver, 20);
         }
     }
 
     @AfterClass
-    public static void closeDriver(){
-        if(driver != null){
+    public static void closeDriver() {
+        if (driver != null) {
             driver.quit();
             driver = null;
         }
