@@ -1,10 +1,12 @@
+package autoRiaPages;
+
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import driverManager.DriverManager;
 
-public class AutoRiaMainPage extends DriverManager{
+public class AutoRiaMainPage extends DriverManager {
     private By searchForm = By.xpath("//div[contains(@class, 'form-search' )]");
     private By selectCategories = By.xpath("//select[@id = 'categories']");
     private By markaInput = By.xpath("//input[@id = 'brandTooltipBrandAutocompleteInput-brand']");

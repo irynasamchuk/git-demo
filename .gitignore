@@ -1,3 +1,6 @@
 GitDemo.iml
 .idea/
 target/
+allure-results/
+.allure/allure-2.6.0/plugins/xunit-xml-plugin/allure-plugin.yml
+.allure/

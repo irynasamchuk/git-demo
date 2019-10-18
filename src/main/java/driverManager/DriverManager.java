@@ -1,3 +1,5 @@
+package driverManager;
+
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
@@ -16,7 +18,7 @@ public class DriverManager {
             chromeOptions.setBinary("C:\\Users\\Iryna_Samchuk\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
             System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
             driver = new ChromeDriver(chromeOptions);
-            driverWait = new WebDriverWait(driver, 15);
+            driverWait = new WebDriverWait(driver, 20);
         }
     }
 
