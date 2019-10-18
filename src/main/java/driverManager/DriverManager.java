@@ -17,7 +17,7 @@ public class DriverManager {
 //          ChromeOptions chromeOptions = new ChromeOptions();
 //          chromeOptions.setBinary("C:\\Users\\Iryna_Samchuk\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
             System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
-//          driver = new ChromeDriver(chromeOptions);
+            driver = new ChromeDriver();
             driverWait = new WebDriverWait(driver, 20);
         }
     }
