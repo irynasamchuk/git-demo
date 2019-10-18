@@ -11,7 +11,7 @@ public class AutoRiaTest extends DriverManager {
     AutoriaSearchPage autoriaSearchPage = new AutoriaSearchPage();
     private String headerText = "Продажа Мото BMW";
 
-   //@Test
+   @Test
     public void makeSearch(){
         autoRiaMainPage.openMainPage();
         autoRiaMainPage.selectCategory(2);
